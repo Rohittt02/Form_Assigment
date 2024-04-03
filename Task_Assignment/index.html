@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Task Assignment Form</title>
+    <style>
+        /* CSS styles go here */
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <form>
+        <div class="form-section name-inputs">
+            <h2>Task Assignment Form</h2>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+        </div>
+        <div class="form-section">
+            <label for="managerFirstName">Manager First Name</label>
+            <input type="text" id="managerFirstName" name="managerFirstName" placeholder="First name">
+        </div>
+        <div class="form-section">
+            <label for="managerLastName">Manager Last Name</label>
+            <input type="text" id="managerLastName" name="managerLastName" placeholder="Last Name">
+        </div>
+        <br>
+        <div class="form-section task-section">
+            <label for="task">Task No</label>
+            <input type="text" id="task" name="task" placeholder="Task Number">
+            <label for="taskId">Task ID</label>
+            <input type="text" id="taskId" name="taskId" placeholder="Task ID">
+        </div>  
+        <div class="form-section status-section">
+            <h3>Status</h3>
+            <label for="notStarted"><input type="radio" id="notStarted" name="status" value="notStarted"> Not Started</label><br>
+            <label for="inProgress"><input type="radio" id="inProgress" name="status" value="inProgress"> In Progress</label><br>
+            <label for="done"><input type="radio" id="done" name="status" value="done"> Done</label><br>
+            <label for="awaitingFeedback"><input type="radio" id="awaitingFeedback" name="status" value="awaitingFeedback"> Awaiting Feedback</label>
+        </div>
+        <br>
+        <div class="form-section notes-section">
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Type here..."></textarea>
+        </div>
+        <div class="form-section feedback-section">
+            <label for="feedback">Instructions</label>
+            <textarea id="feedback" name="feedback" rows="4" placeholder="Leave feedback for the employee..."></textarea>
+        </div>
+        <button type="submit">Submit</button>
+        <script src="script.js"></script>
+    </form>
+</body>
+</html>
